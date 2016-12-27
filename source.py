@@ -13,7 +13,7 @@ def send_mail_trigger(job_counter,new_count) :
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
     #Next, log in to the server
-    server.login("out.trigger.mailer@gmail.com", "weakpassword")
+    server.login("example@gmail.com", "example_password")
 
     #Send the mail
     msg = "#jobtrigger \n" # The /n separates the message from the headers
